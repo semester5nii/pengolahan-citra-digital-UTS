@@ -1,0 +1,43 @@
+1. A. Citra Asli
+
+      a). Deskripsi:
+          Ini adalah citra grayscale hasil konversi dari gambar berwarna. 
+          Nilai keabuan tiap piksel berkisar antara 0 (hitam) hingga 255 (putih) sesuai intensitas aslinya.  
+      b). Persebaran nilai:
+          Histogram biasanya memperlihatkan distribusi asli dari citra — bisa condong ke kiri (gelap), ke kanan (terang), atau menyebar di tengah tergantung
+          pencahayaan citra. 
+      c). Ciri:
+          Jika gambar cukup terang (seperti bunga berwarna cerah), histogram cenderung memiliki puncak pada nilai keabuan menengah hingga tinggi (abu
+          terang – putih).
+
+   B. Citra Negatif
+
+      a). Rumus:       
+          G=255−F
+      b). Efek:
+          Membalikkan semua intensitas — piksel terang menjadi gelap, dan sebaliknya.
+      c). Persebaran nilai keabuan:
+          Histogram citra negatif adalah cerminan horizontal dari histogram citra asli terhadap garis tengah di nilai 128.
+          Contoh:
+          - Piksel gelap (nilai kecil) pada citra asli menjadi nilai besar (terang) di citra negatif.
+          - Piksel terang (nilai besar) menjadi gelap.
+      d). Makna visual:
+          Detail di area terang citra asli menjadi lebih tampak pada citra negatif, dan sebaliknya.
+
+   C. Citra Logaritmik
+
+      a). Rumus:
+          𝐺 = c X log(1 + F) dengan c =      255
+                                        _______________
+                                        log(1 + max(F))
+      b). Efek:
+          Transformasi logaritmik memperkuat nilai intensitas rendah dan menekan nilai tinggi.
+      c). Persebaran nilai:
+          Histogram menjadi lebih terkonsentrasi di sisi nilai keabuan tinggi (terang).
+          Karena logaritma menaikkan intensitas piksel gelap (misal 10 → 100), area gelap menjadi lebih jelas, sedangkan area terang tidak berubah banyak.
+      d). Makna visual:
+          Citra tampak lebih terang dan detail di daerah gelap lebih mudah terlihat.
+
+
+2. Transformasi logaritmik lebih bermanfaat dibanding negatif ketika ingin meningkatkan detail di area gelap tanpa membalik keseluruhan intensitas citra.
+   Sebaliknya, transformasi negatif digunakan bila perlu membalikkan citra atau menonjolkan area terang.
