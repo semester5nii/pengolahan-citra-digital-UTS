@@ -1,0 +1,20 @@
+1. a).      JENIS FILTER                                                                CIRI VISUAL                                                              
+       
+       Citra Asli                         Menampilkan intensitas asli dari gambar.
+       LPF (Low Pass Filter)              Citra tampak lebih halus / blur. Detail kecil menghilang, tepi lembut.
+       HPF (High Pass Filter)             Citra tampak gelap dengan tepi terang yang menonjol. Bagian datar menjadi hitam, hanya tepi kontras yang terlihat.
+       BPF (Band Pass Filter)             Citra terlihat lebih tajam dari aslinya, detail menonjol, tapi tetap mempertahankan area halus.
+                                          
+   b). Rata-rata Intensitas Piksel:
+       - Citra Asli     : 121.76
+       - LPF (Blur)     : 121.76
+       - HPF (Tepi)     : 24.46
+       - BPF (Sharpen)  : 122.09
+
+2.        JENIS FILTER                     DOMAIN SPASIAL                               DOMAIN FREKUENSI                           EFEK VISUAL                                   
+                 
+              LPF             Rata-rata (semua 1)                                 Melewatkan frekuensi rendah            Halus / blur    
+              HPF             Nilai tengah besar, sekeliling negatif              Melewatkan frekuensi tinggi            Tepi tajam, detail kuat
+              BPF             Kombinasi LPF + HPF                                 Melewatkan frekuensi menengah          Tajam, seimbang antara blur & detail
+                        
+                                     
